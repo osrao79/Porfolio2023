@@ -1,0 +1,125 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  justify-content: space-around;
+  padding: 1rem;
+  gap: 30px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.section-left {
+  flex: 3;
+  padding: 4rem 20px;
+  border-radius: 10px;
+  /* border: #45b3e0 solid 1px; */
+  min-width: 65ch;
+}
+.letter:hover {
+  color: orange;
+}
+
+.typing-demo {
+  width: 65ch;
+  animation: typing 7s steps(50), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.section-right {
+  flex: 1
+}
+
+.heading-1 {
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: start;
+  font-weight: 400;
+  padding-left: 4px;
+}
+
+.heading-2 {
+  margin: -4px 0px;
+  font-size: 5.5rem;
+  font-weight: 900;
+}
+
+.para-1 {
+  font-size: 1rem;
+}
+
+.heading-1,
+.heading-2,
+.para-1 {
+  text-align: start;
+  color: var(--font-color);
+}
+
+.profile-img {
+  width: 12rem;
+  height: 12rem;
+  border: var(--font-color) solid 2px;
+  padding: 2px;
+  border-radius: 50%;
+  position: relative;
+  top: -2rem;
+}
+
+.resume {
+  width: 100px;
+  font-size: 1rem;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background: var(--color-primary);
+  border: var(--font-color) solid 1px;
+  animation: shake-animation 4.72s ease infinite;
+  /* border: 1cap solid var(--font-color) */
+  ;
+}
+.resume:hover{
+cursor: pointer;
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+@keyframes shake-animation {
+  0% { transform:translate(0,0) }
+ 1.78571% { transform:translate(5px,0) }
+ 3.57143% { transform:translate(0,0) }
+ 5.35714% { transform:translate(5px,0) }
+ 7.14286% { transform:translate(0,0) }
+ 8.92857% { transform:translate(5px,0) }
+ 10.71429% { transform:translate(0,0) }
+ 100% { transform:translate(0,0) }
+}
+.resume:hover {
+  background-color: var(--font-color);
+  color: var(--color-secondary);
+  display: inline-block;
+  /* animation: tilt-n-move-shaking  500ms infinite; */
+  /* animation: tilt-n-move-shaking 0.35s alternate-reverse; */
+
+}

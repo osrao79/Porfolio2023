@@ -1,0 +1,135 @@
+.experience-conatiner {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 70%;
+  text-align: start;
+}
+.experience-conatiner .experience-desc {
+  box-sizing: border-box;
+  color:  var(--font-color);
+  height: auto;
+  overflow: hidden;
+  padding: 20px;
+  width: 100%;
+}
+.experience-conatiner .experience-desc .numbered-heading {
+  align-items: center;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.numbered-heading .solid {
+  border-radius: 1px;
+  display: flex;
+  margin: 8px;
+  opacity: .2;
+  width: 30%;
+}
+.experience-conatiner .experience-desc .inner {
+  height: 100%;
+  overflow: auto;
+}
+.experience-conatiner .experience-desc .inner .header{
+display: flex;
+}
+.inner .header h3{
+  margin-bottom: 0px;
+}
+.header-item{
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  font-size: 0.8rem;
+  margin: 5px 0 10px 0;
+}
+.ul-list li{
+  margin-bottom: 6px;
+  list-style-type: square;
+}
+.c{
+  background-color: var(--color-primary);
+  padding: 0px 4px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color:var(--color-primary);
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  margin-left: -3px;
+}
+
+.container, .container2{
+  padding-left: 50px;
+}
+.container::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 13px;
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+  top: 25px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.container2::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 13px;
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+  bottom: 45%;
+  border-radius: 50%;
+  z-index: 1;
+} 
+
+
+@media screen and (max-width: 990px){
+  .experience-conatiner{
+    width: 90%;
+  }
+  .container h3, .title{
+    font-size: 1rem;
+  }
+  .ul-li{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 490px){
+  .container::after {
+  left: 0;
+  top: 16px;
+  }
+  .container2::after{
+    left: 0;
+    bottom: 60%;
+  }
+  .timeline::after{
+    left: 7px;
+  }
+  .container h3, .title{
+    font-size: 0.75rem;
+  }
+  .container, .container2{
+    padding-left: 15px;
+  }
+  .experience-conatiner .experience-desc{
+    padding: 10px;
+  }
+}
