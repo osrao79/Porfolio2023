@@ -13,7 +13,10 @@ function Experience() {
             <div className='header-item'>August 2020 - April 2021</div>
             <ul className='ul-list'>
               <li className='ul-li'>
-                Completed 9 month internship in full stack web development.
+              Demonstrated expertise in full-stack web development through a rigorous 9-month internship, mastering both front-end and back-end technologies.
+              </li>
+              <li className='ul-li'>
+              Successfully completed projects encompassing various aspects of web development, including user interface design, server-side programming, and database integration.
               </li>
             </ul>
           </div>
@@ -30,8 +33,8 @@ function Experience() {
               </li>
               <li className='ul-li'>
                 Working with a variety of different languages, platforms,
-                frameworks, and content management systems such as JavaScript,
-                React, NodeJS, MongoDB, SQL etc.
+                frameworks, and content management systems such as Javascript,
+                React, NodeJS, Express and MongoDB etc.
               </li>
             </ul>
           </div>

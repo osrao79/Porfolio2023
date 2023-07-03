@@ -8,10 +8,10 @@
   z-index: 3;
 }
 .logo {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   font-size: 1.5rem;
-  background-color: white;
+  background-color: transparent;
   color: #ffff;
   text-align: center;
   line-height: 5rem;
@@ -21,7 +21,7 @@
 .email {
   color: var(--color-primary);
   opacity: 0.75;
-  margin-top: 0.2rem;
+  margin-top: 0.4rem;
   font-size: 0.75rem;
 }
 .vert-hr {
@@ -34,7 +34,7 @@
   opacity: 0.5;
 }
 .logo:hover {
-  animation: loader 1s infinite linear;
+  animation: loader 5s infinite linear;  
 }
 .hr {
   width: 75%;
@@ -176,7 +176,7 @@
 .theme-darkmode {
   /* border: #FFD369 2px solid; */
   color: #ffd369;
-  background-color: rgb(56, 56, 56);
+  /* background-color: rgb(56, 56, 56); */
 }
 .wire {
   position: absolute;

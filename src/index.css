@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Roboto,sans-serif,Source Code Pro,monospace;
+  /* font-family: 'Poppins', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-secondary);
@@ -12,17 +13,19 @@ code {
 }
 
 .theme-light {
-  --color-primary: #d9ed92;
+  --color-primary: #EB144C;
   --color-secondary:rgb(255 255 255);
-    --font-color: rgb(56, 56, 56);
+    --font-color: #121212;
     --color-picker:rgb(255 255 255);
-    --color-common:#000
+    --color-common:#000;
+    --color-white:#ffffff
   }
   .theme-dark {
-    --color-primary: #628456;
-    --color-secondary: rgb(56, 56, 56);;
+    --color-primary: #c71645;
+    --color-secondary: #121212;
     --color-accent: #12cdea;
     --font-color: #ffffff;
     --color-picker:rgb(126 119 119);
-    --color-common:#ffffff
+    --color-common:#ffffff;
+    --color-white:#ffffff;
 }

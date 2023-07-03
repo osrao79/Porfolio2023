@@ -19,7 +19,7 @@
     top: 171px;
       z-index: 1;
   transform: rotate(56deg);
-  opacity: 0.2;
+  opacity: 0.1;
   -webkit-animation : pulse 60s linear alternate infinite;
     -moz-animation    : pulse 60s linear alternate infinite;
     -o-animation      : pulse 60s linear alternate infinite;
@@ -35,7 +35,7 @@
     top: 100px;
       z-index: 1;
   transform: rotate(35deg);
-  opacity: 0.4;
+  opacity: 0.2;
   -webkit-animation : pulse-rev 60s linear alternate infinite;
   -moz-animation    : pulse-rev 60s linear alternate infinite;
   -o-animation      : pulse-rev 60s linear alternate infinite;

@@ -100,7 +100,7 @@ z-index: 2;
   animation: shake-animation 6.72s ease infinite;
   display: grid;
   place-items: center;
-  color: var(--color-secondary);
+  color: var(--color-white);
   text-decoration: none;
 }
 
