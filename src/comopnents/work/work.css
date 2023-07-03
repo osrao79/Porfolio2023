@@ -5,7 +5,7 @@
   height: 100%;
   box-sizing: border-box;
   gap: 25px;
-  z-index: 3;
+  z-index: 2;
   opacity: 0.9;
 }
 

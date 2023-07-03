@@ -88,6 +88,7 @@ const Dashboard = () => {
   const handleChangeComplete = (color) => {
     window.localStorage.setItem('theme', JSON.stringify(color))
     setThemeColor(color);
+    setShowColorPickerBool(false)
   };
   const showColorPicker = () => {
       setShowColorPickerBool(!showColorPickerBool);

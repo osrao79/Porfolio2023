@@ -7,7 +7,7 @@
   overflow: hidden;
   width: 70%;
   text-align: start;
-  z-index: 3;
+  z-index: 2;
 }
 .experience-conatiner .experience-desc {
   box-sizing: border-box;
