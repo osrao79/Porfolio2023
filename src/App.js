@@ -1,6 +1,5 @@
 
 import './App.css';
-import Footer from './comopnents/footer/footer';
 import Router from './routes';
 import Dashboard from './screens/Dashboard/Dashboard.js';
 
@@ -10,7 +9,8 @@ function App() {
     <div className="App">
       <Dashboard />
       <Router />
-        {/* <Footer/> */}
+        <div className='bg-scaler-right'></div>
+        <div className='bg-scaler-left'></div>
     </div>
   );
 }

@@ -7,6 +7,7 @@
   overflow: hidden;
   width: 70%;
   text-align: start;
+  z-index: 3;
 }
 .experience-conatiner .experience-desc {
   box-sizing: border-box;
@@ -55,6 +56,7 @@ display: flex;
   padding: 1px 6px;
     border-radius: 4px;
     margin-left: 4px;
+    color: var(--color-secondary);
 }
 
 .timeline {

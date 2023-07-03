@@ -7,6 +7,32 @@
   padding: 2rem;
   height: 89vh;
   background: var(--color-secondary);
+  position: relative;
+  overflow: hidden;
+}
+.bg-scaler-right{
+  width: 36rem;
+  height: 36rem;
+  background-color: var(--color-primary);
+  position: absolute;
+  right: -215px;
+    top: 171px;
+      z-index: 1;
+  transform: rotate(56deg);
+  opacity: 0.2;
+}
+
+.bg-scaler-left{
+  width: 16rem;
+  height: 16rem;
+  background-color: var(--color-primary);
+  position: absolute;
+  left: -215px;
+    top: 100px;
+      z-index: 1;
+  transform: rotate(56deg);
+  opacity: 0.4;
+  animation: updown 10s ;
 }
 @media screen and (max-width: 990px){
   .App{
@@ -14,4 +40,31 @@
     height: 95vh;
     min-height: 95vh;
   }
+  .bg-scaler-left{
+    width: 7rem;
+    height: 7rem;
+    left: -8%;
+    top: 25%;
+  }
+  .bg-scaler-right{
+    width: 20rem;
+    height: 17rem;
+    right: -21%;
+    top: 48%;
+  }
 }
+@media screen and (max-width: 550px){
+  .bg-scaler-left{
+    width: 10rem;
+    height: 10rem;
+    left: -106px;
+    top: 50%;
+  }
+  .bg-scaler-right{
+    width: 18rem;
+    height: 18rem;
+    right: -217px;
+    top: 184px;
+  }
+}
+

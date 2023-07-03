@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 // import Profile from '../../assets/Profile.jpg'
-import profile from '../../assets/profile.png'
+// import profile from '../../assets/profile.png'
+import picofme from '../../assets/picofme.png'
 import './Home.css'
 import '../../responsive.css'
 
@@ -35,7 +36,7 @@ const Home = () => {
         <p className='para-1 '>I build interactive websites that run across platforms & devices.</p>
       </div>
       <div className='section-right'>
-        <img src={profile} className='profile-img' alt="profile" draggable="false"></img>
+        <img src={picofme} className='profile-img' alt="profile" draggable="false"></img>
         <a id="download-btn"className='resume' href={require("../../assets/ResumeOnkar.pdf")} download="Onkar-Resume" onClick={disableBtn} style={{pointerEvents : disabled ? "none" : 'auto', opacity: disabled ? 0.6 : 1}}>Resume</a>
       </div>
     </div>

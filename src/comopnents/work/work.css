@@ -5,6 +5,8 @@
   height: 100%;
   box-sizing: border-box;
   gap: 25px;
+  z-index: 3;
+  opacity: 0.9;
 }
 
 .grid {
@@ -24,6 +26,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   flex-direction: column;
+  color: var(--color-common);
   transition: transform 130ms linear
 }
 

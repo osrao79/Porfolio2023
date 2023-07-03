@@ -5,6 +5,7 @@
   flex-direction: column;
   width: 100%;
   position: relative;
+  z-index: 3;
 }
 .logo {
   width: 5rem;
@@ -60,7 +61,7 @@
 .mode-switch {
   top: 0;
   position: absolute;
-  right: 0;
+  right: 100px;
 }
 
 @keyframes loader {
@@ -131,6 +132,11 @@
 }
 .wire{
   height: 40% !important;
+  right: 20px !important;
+  
+}
+.mode-switch{
+  right: -9px;
 }
 
 }
@@ -174,7 +180,7 @@
 }
 .wire {
   position: absolute;
-  right: 29px;
+  right: 129px;
   top: -35px;
   width: 2px;
   height: 25%;
