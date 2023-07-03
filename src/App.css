@@ -20,6 +20,10 @@
       z-index: 1;
   transform: rotate(56deg);
   opacity: 0.2;
+  -webkit-animation : pulse 60s linear alternate infinite;
+    -moz-animation    : pulse 60s linear alternate infinite;
+    -o-animation      : pulse 60s linear alternate infinite;
+    animation         : pulse 60s linear alternate infinite;
 }
 
 .bg-scaler-left{
@@ -30,9 +34,12 @@
   left: -215px;
     top: 100px;
       z-index: 1;
-  transform: rotate(56deg);
+  transform: rotate(35deg);
   opacity: 0.4;
-  animation: updown 10s ;
+  -webkit-animation : pulse-rev 60s linear alternate infinite;
+  -moz-animation    : pulse-rev 60s linear alternate infinite;
+  -o-animation      : pulse-rev 60s linear alternate infinite;
+  animation         : pulse-rev 60s linear alternate infinite;
 }
 @media screen and (max-width: 990px){
   .App{
@@ -58,7 +65,7 @@
     width: 10rem;
     height: 10rem;
     left: -106px;
-    top: 50%;
+    top: 70%;
   }
   .bg-scaler-right{
     width: 18rem;
@@ -67,4 +74,39 @@
     top: 184px;
   }
 }
+
+
+
+/* animations */
+
+@keyframes pulse {
+  from {
+      transform : scale(1);
+      transform: rotate(56deg);
+  }
+  50% {
+      transform : scale(2);
+      transform: rotate(75deg);
+  }
+  to {
+      transform : scale(1);
+      transform: rotate(56deg);
+  }
+}
+
+@keyframes pulse-rev {
+  from {
+      transform : scale(1);
+      transform: rotate(35deg);
+  }
+  50% {
+      transform : scale(0.6);
+      transform: rotate(55deg);
+  }
+  to {
+      transform : scale(1);
+      transform: rotate(35deg);
+  }
+}
+
 
