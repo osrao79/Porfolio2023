@@ -142,6 +142,9 @@
   .grid-display {
     width: 100%;
   }
+  .work-container{
+    height: 60%;
+  }
 }
 
 @media screen and (max-width: 550px) {
