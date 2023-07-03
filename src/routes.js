@@ -4,6 +4,7 @@ import Experience from "./comopnents/experience/experience";
 import Work from "./comopnents/work/work";
 import About from "./comopnents/about/about";
 import Contact from "./comopnents/contact/contact";
+import Resume from "./comopnents/resume/resume";
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
         <Route path='/work' element={<Work />} />
         <Route path='/about-me' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/resume' element={<Resume />} />
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>
     </>

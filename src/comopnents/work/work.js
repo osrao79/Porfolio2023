@@ -4,7 +4,7 @@ import Hive from '../../assets/Hive.PNG'
 import Isomer from '../../assets/Isomer.png'
 import timesheet from '../../assets/timesheet.jpg'
 import roamingduck from '../../assets/roamingduck.png'
-import back from '../../assets/back.svg'
+import {IoMdArrowRoundBack} from 'react-icons/io'
 
 const myProjects = [
   {
@@ -65,7 +65,8 @@ const Work = () => {
       ) : (
         <div className='project-desc'>
           <span className="go-back" onClick={() => showProject(null)}>
-            <img src={back} className="back-btn" alt="back"/>
+              {/* <img src={back} className="back-btn" alt="back" /> */}
+              <IoMdArrowRoundBack size={"1em"} className="back-btn" />
           </span>
           <div className='wrapper'>
               <div className='grid-item'>

@@ -4,7 +4,7 @@
   width: 80%;
   height: 100%;
   box-sizing: border-box;
-  gap: 10px;
+  gap: 25px;
 }
 
 .grid {
@@ -24,7 +24,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   flex-direction: column;
-  transition: transform 330ms ease-in-out
+  transition: transform 130ms linear
 }
 
 .project:hover {
@@ -57,13 +57,14 @@
   object-fit: fill;
   width: 60%;
   max-height: 60vh;
+  min-height: 50vh;
 }
 
 .grid-img {
   max-height: 100%;
   max-width: 100%;
   object-fit: fill;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .grid-desc {
@@ -79,7 +80,7 @@
 .back-btn {
   width: 30px;
   height: 30px;
-  color: var(--color-primary);
+  color: var(--font-color);
 
 }
 
@@ -106,16 +107,18 @@
 
 .project-tech {
   font-family: source-code-pro, -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   margin: 4px 0;
   font-weight: 600;
+  color: var(--font-color);
 }
 
 .go-back {
   position: absolute;
   z-index: 2;
   left: -60px;
+  color: var(--font-color);
 }
 
 
@@ -144,7 +147,7 @@
 @media screen and (max-width: 550px) {
   .work-container .project {
     width: 90%;
-    height: 90%;
+    height: 80%;
     font-size: 0.7rem;
     padding: 1rem;
     gap: 0;

@@ -1,8 +1,23 @@
-import React from 'react'
-import Profile from '../../assets/Profile.jpg'
+import React, { useState } from 'react'
+// import Profile from '../../assets/Profile.jpg'
+import profile from '../../assets/profile.png'
 import './Home.css'
 import '../../responsive.css'
+
+
+
 const Home = () => {
+  const [disabled, setDisabled] = useState(false)
+
+  const disableBtn = () => {
+    setDisabled(true)
+    console.log("dis",disabled)
+      setTimeout(() => {
+        setDisabled(false)
+        console.log('called')
+      }, 5000);
+  console.log(disabled)
+}
   return (
     <div className='home'>
       <div className='section-left'>
@@ -19,8 +34,8 @@ const Home = () => {
         <p className='para-1 '>I build interactive websites that run across platforms & devices.</p>
       </div>
       <div className='section-right'>
-        <img src={Profile} className='profile-img' alt="profile"></img>
-        <button className='resume'>Resume</button>
+        <img src={profile} className='profile-img' alt="profile" draggable="false"></img>
+        <a id="download-btn"className='resume' href={require("../../assets/ResumeOnkar.pdf")} download="Onkar-Resume" onClick={disableBtn} style={{pointerEvents : disabled ? "none" : 'auto', opacity: disabled ? 0.6 : 1}}>Resume</a>
       </div>
     </div>
   )

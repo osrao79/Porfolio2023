@@ -62,11 +62,13 @@ function About() {
               width={"40px"} alt="tech"/>
             </span>
             <span>
-              <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg' height={"40px"}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" height={"40px"}
               width={"40px"} alt="tech"/>
             </span>
             <span>
-              <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg' height={"40px"}
+              {/* <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg' height={"40px"}
+              width={"40px"} alt="tech"/> */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg"height={"40px"}
               width={"40px"} alt="tech"/>
             </span>
             <span>

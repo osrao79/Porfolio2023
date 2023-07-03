@@ -13,7 +13,7 @@ function Experience() {
             <div className='header-item'>August 2020 - April 2021</div>
             <ul className='ul-list'>
               <li className='ul-li'>
-                Completed 6 month internship in full stack web development.
+                Completed 9 month internship in full stack web development.
               </li>
             </ul>
           </div>
@@ -26,7 +26,7 @@ function Experience() {
             <ul className='ul-list'>
               <li className='ul-li'>
                 Writing modern, performant, maintainable code for a diverse
-                array of client and internal project
+                array of client and internal project.
               </li>
               <li className='ul-li'>
                 Working with a variety of different languages, platforms,

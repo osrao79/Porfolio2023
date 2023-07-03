@@ -8,14 +8,18 @@
 .contact-container .inner{
   display: grid;
   grid-template-columns: 60px 60px;
-  /* gap: 20px; */
+  gap: 20px;
   /* transform: rotate(45deg); */
+  place-items: center;
 }
 .contact-icon{
   width: 60px;
   height: 60px;
   display: grid;
   place-items: center;
+  outline: 1.4px white solid;
+    padding: 4px;
+    border-radius: 5px;
 }
 
 /* .contact-container .inner div:nth-child(2),.contact-container .inner div:nth-child(4){
@@ -36,9 +40,13 @@
     min-height: 50vh;
     min-width: 60vw;
   }
-  .inner{
-    grid-template-columns: 40px 40px;
+  .contact-container .inner{
+    grid-template-columns: 50px 50px;
     gap: 10px;
+  }
+  .contact-react-icon{
+    width: 30px;
+    height: 30px;
   }
   .contact-icon{
     width: 40px;
@@ -47,9 +55,9 @@
 }
 
 .contact-medium{
-  color: var(--color-primary) !important;
+  color: var(--color-primary) ;
 }
 .contact-icon a:hover{
 cursor: pointer;
-transform: scale(1.2);
+transform: scale(1.1);
 }

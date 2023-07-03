@@ -44,7 +44,10 @@
 }
 
 .section-right {
-  flex: 1
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .heading-1 {
@@ -71,7 +74,10 @@
   text-align: start;
   color: var(--font-color);
 }
-
+.heading-2{
+  color: var(--color-primary);
+  /* -webkit-text-stroke: 1px var(--font-color); */
+}
 .profile-img {
   width: 12rem;
   height: 12rem;
@@ -90,12 +96,11 @@
   border-radius: 4px;
   background: var(--color-primary);
   border: var(--font-color) solid 1px;
-  animation: shake-animation 4.72s ease infinite;
-  /* border: 1cap solid var(--font-color) */
-  ;
-}
-.resume:hover{
-cursor: pointer;
+  animation: shake-animation 6.72s ease infinite;
+  display: grid;
+  place-items: center;
+  color: var(--font-color);
+  text-decoration: none;
 }
 
 @keyframes tilt-n-move-shaking {
@@ -118,7 +123,6 @@ cursor: pointer;
 .resume:hover {
   background-color: var(--font-color);
   color: var(--color-secondary);
-  display: inline-block;
   /* animation: tilt-n-move-shaking  500ms infinite; */
   /* animation: tilt-n-move-shaking 0.35s alternate-reverse; */
 
