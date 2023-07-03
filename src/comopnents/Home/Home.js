@@ -7,6 +7,7 @@ import '../../responsive.css'
 
 
 const Home = () => {
+  
   const [disabled, setDisabled] = useState(false)
 
   const disableBtn = () => {

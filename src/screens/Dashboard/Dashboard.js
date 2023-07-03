@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Dashboard.css";
 import "../../responsive.css";
@@ -8,7 +8,9 @@ import lightOn from "../../assets/lightOn.png";
 import lightOff from "../../assets/lightOff.png";
 import { GithubPicker } from "react-color";
 
+
 const Dashboard = () => {
+  const ColorPickerRef = useRef(null);
   const [theme, setTheme] = useState("theme-light");
   const [themeColor, setThemeColor] = useState({ hex: "#9AC5F4" });
   const [showColorPickerBool, setShowColorPickerBool] = useState(false);
@@ -35,6 +37,23 @@ const Dashboard = () => {
     "#EC5858",
   ];
 
+
+  useEffect(() => {
+    const checkIfClickedOutside = e => {
+      // If the menu is open and the clicked target is not within the menu,
+      // then close the menu
+      console.log(ColorPickerRef.current)
+      if (showColorPickerBool && ColorPickerRef.current && !ColorPickerRef.current.contains(e.target)) {
+        setShowColorPickerBool(false)
+      }
+    }
+    document.addEventListener("mousedown", checkIfClickedOutside)
+    return () => {
+      // Cleanup the event listener
+      document.removeEventListener("mousedown", checkIfClickedOutside)
+    }
+  }, [showColorPickerBool])
+
   const toggleTheme = () => {
     if (theme === "theme-dark") {
       setTheme("theme-light");
@@ -55,23 +74,32 @@ const Dashboard = () => {
   useEffect(() => {
     var root = document.querySelector(".theme-light");
     var rootDark = document.querySelector(".theme-dark");
-    root?.style.setProperty("--color-primary", themeColor.hex);
-    rootDark?.style.setProperty("--color-primary", themeColor.hex);
+    let clr = window.localStorage.getItem("theme")
+    clr = JSON.parse(clr)
+    if (clr) {
+      root?.style.setProperty("--color-primary", clr.hex);
+      rootDark?.style.setProperty("--color-primary", clr.hex);
+    } else {
+      rootDark?.style.setProperty("--color-primary", themeColor.hex);
+      root?.style.setProperty("--color-primary", themeColor.hex);
+    }
   }, [themeColor]);
 
   const handleChangeComplete = (color) => {
+    window.localStorage.setItem('theme', JSON.stringify(color))
     setThemeColor(color);
   };
   const showColorPicker = () => {
-    setShowColorPickerBool(!showColorPickerBool);
+      setShowColorPickerBool(!showColorPickerBool);
   };
   return (
     <div className='dashboard'>
-      <div className='theme-picker'>
+      <div className='theme-picker' ref={ColorPickerRef}>
         <div className='color-block' onClick={showColorPicker}>
           <div className='inner'></div>
         </div>
         {showColorPickerBool && (
+          <div className="pelette-box" >
           <GithubPicker
             className='pelette'
             colors={colors}
@@ -79,6 +107,7 @@ const Dashboard = () => {
             color={themeColor}
             onChangeComplete={handleChangeComplete}
           />
+            </div>
         )}
       </div>
       <div className='wire'></div>

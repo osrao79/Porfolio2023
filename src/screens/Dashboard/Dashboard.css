@@ -18,7 +18,7 @@
   border-radius: 50%;
 }
 .email {
-  color: var(--font-color);
+  color: var(--color-primary);
   opacity: 0.5;
   margin-top: 0.2rem;
   font-size: 0.75rem;
@@ -195,7 +195,7 @@
 .color-block{
   width: 60px;
   height: 30px;
- outline: 1px solid rgba(0, 0, 0, 0.2);
+ outline: 1px solid var(--font-color);
   box-sizing: border-box;
   padding:2px;
   /* border-radius: 4px; */
@@ -210,9 +210,12 @@
 .color-block .inner:hover{
   cursor: pointer;
 }
-.pelette{
-  width: 175px !important;
+.pelette-box{
+  position: relative;
   top:35px;
+}
+.pelette{
+  /* width: 175px !important; */
   gap: 5px;
   z-index: 2;
 }
@@ -220,10 +223,13 @@
   border-radius: 4px;
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:990px) {
   .theme-picker{
-    top: 20px;
+    left: 11px;
+    top: 24px;
   }
+}
+@media screen and (max-width:550px) {
   .color-block{
     width: 40px;
     height: 25px;

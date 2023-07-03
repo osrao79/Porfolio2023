@@ -99,7 +99,7 @@
   animation: shake-animation 6.72s ease infinite;
   display: grid;
   place-items: center;
-  color: var(--font-color);
+  color: var(--color-secondary);
   text-decoration: none;
 }
 
@@ -127,3 +127,4 @@
   /* animation: tilt-n-move-shaking 0.35s alternate-reverse; */
 
 }
+
