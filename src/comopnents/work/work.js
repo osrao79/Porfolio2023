@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./work.css";
-import Hive from '../../assets/Hive.PNG'
-import Isomer from '../../assets/Isomer.png'
-import timesheet from '../../assets/timesheet.jpg'
+import Hive from '../../assets/hive.png'
+import Isomer from '../../assets/isomer.png'
+import timesheet from '../../assets/leadgen.png'
 import roamingduck from '../../assets/roamingduck.png'
 import {IoMdArrowRoundBack} from 'react-icons/io'
 
