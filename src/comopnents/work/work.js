@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./work.css";
-import Hive from '../../assets/hive.png'
-import Isomer from '../../assets/isomer.png'
-import timesheet from '../../assets/leadgen.png'
+import hive from '../../assets/hive.png'
+import isomer from '../../assets/isomer.png'
+import leadgen from '../../assets/leadgen.png'
 import roamingduck from '../../assets/roamingduck.png'
 import {IoMdArrowRoundBack} from 'react-icons/io'
 
@@ -10,19 +10,19 @@ const myProjects = [
   {
     name:'The HiVE',
     desc: "A location-centric SaaS application which enables users to identify via a geo location where cleaning services are being performed. From finding and viewing these Geo Locations, using Google maps, more information about the Client, the staff, the services associated with the location is made viewable in The HiVE.",
-    view:Hive,
+    view:hive,
     tech:'React, Redux, SASS, Material UI, Google Map API'
   },
   {
     name:'Isomer AI',
     desc: "An industrial AI platform for biopharma manufacturers, the platform enables customers to build and deploy AI pipelines* in a studio “drag and drop” environment and pushing model results to a 3rd party system.",
-    view:Isomer,
+    view:isomer,
     tech:'React, Redux, SASS, Material UI, React-Flow'
   },
   {
     name:'LeadGen Automation',
     desc: "A SaaS application which enables users to genrate new project leads and edit or delete them. User can also creates campaigns and keep a track of all campaigns", 
-    view:timesheet,
+    view:leadgen,
     tech:'React, Redux, SASS, Material UI, Firebase'
   },
   {
