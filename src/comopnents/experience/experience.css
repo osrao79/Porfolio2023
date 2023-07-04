@@ -122,7 +122,7 @@ display: flex;
   }
   .container2::after{
     left: 0;
-    bottom: 60%;
+    bottom: 50%;
   }
   .timeline::after{
     left: 7px;

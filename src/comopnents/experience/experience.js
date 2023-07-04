@@ -15,9 +15,6 @@ function Experience() {
               <li className='ul-li'>
               Demonstrated expertise in full-stack web development through a rigorous 9-month internship, mastering both front-end and back-end technologies.
               </li>
-              <li className='ul-li'>
-              Successfully completed projects encompassing various aspects of web development, including user interface design, server-side programming, and database integration.
-              </li>
             </ul>
           </div>
           <div className="container2">
