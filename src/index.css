@@ -14,18 +14,20 @@ code {
 
 .theme-light {
   --color-primary: #EB144C;
-  --color-secondary:rgb(255 255 255);
+  --color-secondary:#F5F5F5;
     --font-color: #121212;
     --color-picker:rgb(255 255 255);
     --color-common:#000;
-    --color-white:#ffffff
+    --color-white:#ffffff;
+    --color-text-secondary: #181818
   }
   .theme-dark {
     --color-primary: #c71645;
-    --color-secondary: #121212;
+    --color-secondary: #181818;
     --color-accent: #12cdea;
     --font-color: #ffffff;
     --color-picker:rgb(126 119 119);
     --color-common:#ffffff;
     --color-white:#ffffff;
+    --color-text-secondary: #AAAAAA
 }

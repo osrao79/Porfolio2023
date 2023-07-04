@@ -53,7 +53,7 @@
   font-size: 1.2rem;
 }
 .route {
-  color: rgb(124, 123, 123);
+  color: var(--color-text-secondary);
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
@@ -133,7 +133,7 @@
 .wire{
   height: 40% !important;
   right: 20px !important;
-  
+  top: -38px !important;
 }
 .mode-switch{
   right: -9px;
@@ -171,7 +171,7 @@
 .theme-lightmode {
   /* border: #B6EADA 2px solid; */
   color: #b6eada;
-  background: white;
+  background: transparent;
 }
 .theme-darkmode {
   /* border: #FFD369 2px solid; */
@@ -181,7 +181,7 @@
 .wire {
   position: absolute;
   right: 129px;
-  top: -35px;
+  top: -28px;
   width: 2px;
   height: 25%;
   background: #000;
@@ -189,9 +189,10 @@
 }
 
 .theme-picker{
-  position: absolute;
-  left: 0;
-  top: 0;
+      position: absolute;
+    left: 66px;
+    top: 53px;
+    z-index: 5;
 }
 .color-block{
   position: absolute;
@@ -199,12 +200,12 @@
   top: 0;
 }
 .color-block{
-  width: 60px;
-  height: 30px;
+  width: 37px;
+  height: 23px;
  outline: 1px solid var(--font-color);
   box-sizing: border-box;
-  padding:2px;
-  /* border-radius: 4px; */
+  padding:0px;
+  border-radius: 2px;
   display: grid;
   place-items: center;
 }
@@ -238,8 +239,8 @@
 }
 @media screen and (max-width:550px) {
   .color-block{
-    width: 40px;
-    height: 25px;
+    width: 26px;
+    height: 18px;
   }
   .pelette{
     width: 148px !important;

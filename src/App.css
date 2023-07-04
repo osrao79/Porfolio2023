@@ -44,7 +44,7 @@
 @media screen and (max-width: 990px){
   .App{
     padding: 0.25rem;
-    height: 95vh;
+    height: 97vh;
     min-height: 95vh;
   }
   .bg-scaler-left{
