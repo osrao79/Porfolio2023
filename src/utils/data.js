@@ -1,52 +1,41 @@
 export const colors = [
-  // "#9AC5F4",
-  // "#FF8787",
-  // "#A0C49D",
-  // "#7BDCB5",
-  // "#00D084",
-  // "#0693E3",
-  // "#ABB8C3",
-  // "#EB144C",
-  // "#F78DA7",
-  // "#C56183",
-  // "#FBCB0A",
-  // "#9681EB",
-  // "#B83B5E",
-  // "#16FF00",
-  // "#D62AD0",
-  // "#8430CF",
-  // "#FCE700",
-  // "#EC5858",
-  // "#F73D93",
+  "#FF4500", // Orange Red
+  "#FF8000", // Orange
+  "#00FF00", // Lime
+  "#002D2D", // Cyan
+  "#FF00FF", // Magenta
+  "#800080", // Purple
+  "#0000FF", // Blue
+  "#FFE162", // Yellow
+  "#800000", // Maroon
+  "#008080", // Teal
+  "#FF1493", // Deep Pink
+  "#6A5ACD", // Slate Blue
+  "#8A2BE2", // Blue Violet
+  "#1F441E", // Green
+  "#FFA500", // Orange
+  "#FF69B4", // Hot Pink
+  "#3AB0FF" , // sky blue
+  "#91D18B" , // grey green
+  "#D9455F" , // grey green
+  "#EA6227" , // grey green
+  
 
-  "#FF0000",
-  "#0000FF",
-  "#FF6347",
-  "#FFD700",
-  "#00CED1",
-  "#F15F5D",
-  "#76BD17",
-  "#BB29BB",
-  "#F44336",
-  "#4CAF50",
-  "#2196F3",
-  "#E74C3C",
-  "#2ECC71",
-  "#3498DB",
-  "#FF4081",
-  "#8A2BE2",
-  "#9932CC",
-  "#FFB6C1",
-  "#87CEFA",
-  "#98FB98",
-  "#FF00AA",
-  "#00FF66",
-  "#FF00FF",
-  "#8B4513",
-  "#6B8E23",
-  "#CD853F",
-  "#FF7F00",
-  "#FFFF00",
-  "#00FF00",
-  "#4B0082",
+  "#FF00FF", // Dark Magenta
+  "#00FFFF", // Dark Cyan
+  "#FF00AA", // Dark Pink
+  "#00FF00", // Dark Green
+  "#FFAA00" , // Dark Orange
+
+
+  "#E60000", // Darkened Red
+  "#E63B00", // Darkened Orange Red
+  "#E67400", // Darkened Dark Orange
+  "#E68F00", // Darkened Orange
+  "#E6C200", // Darkened Gold
+  "#E6E600", // Darkened Yellow
+  "#A8D100", // Darkened Green Yellow
+  "#7FD100", // Darkened Chartreuse
+  "#00CC00", // Darkened Lime
+  "#00CC99"  // Darkened Spring Green
 ];
