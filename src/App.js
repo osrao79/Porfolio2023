@@ -42,8 +42,10 @@ function App() {
   const toggleTheme = () => {
     if (theme === "theme-dark") {
       setTheme("theme-light");
+      window.localStorage.setItem('theme-mode', "theme-light")
     } else {
       setTheme("theme-dark");
+      window.localStorage.setItem('theme-mode', "theme-dark")
     }
   };
 
@@ -53,7 +55,14 @@ function App() {
   }
 
   useEffect(() => {
-    setThemeFun(theme);
+    let Savedtheme = window.localStorage.getItem('theme-mode');
+    console.log(Savedtheme)
+    if (Savedtheme && Savedtheme.length) {
+
+      setThemeFun((Savedtheme));
+    } else {
+      setTheme(theme)
+    }
   }, [theme]);
 
   useEffect(() => {

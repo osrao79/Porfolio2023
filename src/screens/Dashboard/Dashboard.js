@@ -2,8 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Dashboard.css";
 import "../../responsive.css";
-import logo from "../../assets/logo.png";
-import logodark from "../../assets/logodark.png";
 import lightOn from "../../assets/lightOn.png";
 import lightOff from "../../assets/lightOff.png";
 
@@ -32,7 +30,7 @@ const Dashboard = (props) => {
           ></img>
         )}
       </button>
-      {theme === "theme-dark" ? (
+      {/* {theme === "theme-dark" ? (
         <img
           src={logo}
           className='logo'
@@ -48,7 +46,7 @@ const Dashboard = (props) => {
           height={"40px"}
           alt='logo'
         />
-      )}
+      )} */}
       <p className='email'>osrao79@gmail.com</p>
       <div className='routes'>
         <NavLink className='route' to={"/"}>

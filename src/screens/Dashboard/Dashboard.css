@@ -21,7 +21,7 @@
 .email {
   color: var(--color-primary);
   opacity: 0.75;
-  margin-top: 0.4rem;
+  margin-top: 2.4rem;
   font-size: 0.75rem;
 }
 .vert-hr {
@@ -133,7 +133,7 @@
 .wire{
   height: 40% !important;
   right: 20px !important;
-  top: -38px !important;
+  top: -30px !important;
 }
 .mode-switch{
   right: -9px;
@@ -183,7 +183,7 @@
   right: 129px;
   top: -28px;
   width: 2px;
-  height: 25%;
+  height: 31%;
   background: #000;
   z-index: 1;
 }
